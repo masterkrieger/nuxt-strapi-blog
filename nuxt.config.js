@@ -39,7 +39,7 @@ module.exports = {
   },
   env: {
     strapi: {
-      apiUrl: 'http://10.0.0.17:1337'
+      apiUrl: 'http://localhost:1337'
     }
   }
 }

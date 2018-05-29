@@ -14,7 +14,7 @@
           </div>
           <div class="card-content">
             <div class="content">
-              <!--{{ post.Summary }}-->
+              {{ post.slug }}
             </div>
           </div>
           <div class="card-footer is-centered">
