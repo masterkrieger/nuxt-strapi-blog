@@ -1,3 +1,5 @@
+const axios = require('axios')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -35,6 +37,16 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    }
+  },
+  generate:{
+    routes: function () {
+      return axios.get('http://localhost:1337/article')
+        .then((res) => {
+          return res.data.map(post =>{
+            return post.slug
+          })
+      })
     }
   },
   env: {
